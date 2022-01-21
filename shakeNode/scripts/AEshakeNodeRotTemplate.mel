@@ -1,0 +1,24 @@
+/*  AEshakeNodeRotTemplate.mel
+    The Attribute Editor template for the shakeNodeRot node.
+*/
+
+global proc AEshakeNodeRotTemplate(string $nodeName) {
+    // Main Layout
+    editorTemplate -beginScrollLayout;
+    
+    editorTemplate -addControl "enable";
+
+    editorTemplate -addControl "shakeLayer";
+
+    editorTemplate -beginLayout "Time Attributes" -collapse true;
+        editorTemplate -addControl "inTime";
+        editorTemplate -endLayout;
+    
+    // Include/call base class/node attributes
+    AEdependNodeTemplate $nodeName;
+
+    editorTemplate -addExtraControls;
+    
+    // End Main Layout
+    editorTemplate -endScrollLayout;
+};
