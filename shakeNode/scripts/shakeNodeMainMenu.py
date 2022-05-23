@@ -113,10 +113,7 @@ class MainMenu():
 
 
 class ShakeNodeMainMenu(MainMenu):
-	"""Derived class for the shakeNode plugin for creating user-defined menu items
-	in the maya main menu.
-
-	"""
+	"""Derived class for the shakeNode plugin for creating user-defined menu items in the maya main menu."""
 
 
 	# Widgets
