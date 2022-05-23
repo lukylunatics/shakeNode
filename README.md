@@ -63,7 +63,7 @@ MacOS:   Coming one day :)
 # Release Notes:
 ```
 Version 1.0.1
-	Adds integration with the maya main meny under Deform / Shake
+	Adds integration with the maya main menu under Deform / Shake
 	Adds Maya 2023 builds for windows and linux
 	Adds improved drag and drop installer which now supports updating previous versions
 	Adds source code to the release
