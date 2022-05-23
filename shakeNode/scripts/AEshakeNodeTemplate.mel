@@ -11,8 +11,8 @@ global proc AEshakeNodeTemplate(string $nodeName) {
     editorTemplate -addControl "shakeLayer";
 
     editorTemplate -beginLayout "Time Attributes" -collapse true;
-        editorTemplate -addControl "inTime";
-        editorTemplate -endLayout;
+			editorTemplate -addControl "inTime";
+			editorTemplate -endLayout;
     
     // Include/call base class/node attributes
     AEdependNodeTemplate $nodeName;

@@ -29,7 +29,7 @@ ShakeNode is a user-defined MPxNode dsegined to create convincing procedural noi
 
 4. Start Maya, the module will be loaded and the console should print out:
 ```
-// Successfully imported plugin module 'shakeNode' v.1.0.0 //
+Successfully imported plugin module 'shakeNode' v.1.0.1
 ```
 
 
@@ -55,15 +55,21 @@ cmds.shake("pCube1", n="positionShake", a="translate")
 
 # Supported Maya versions and platforms:
 ```
-Windows: Maya 2022, 2020
-Linux:   Maya 2022
-MacOS:   Coming Soon
+Windows: Maya 2022, 2023
+Linux:   Maya 2022, 2023
+MacOS:   Coming one day :)
 ```
 
 # Release Notes:
 ```
-Version 1.0.0
+Version 1.0.1
+	Adds integration with the maya main meny under Deform / Shake
+	Adds Maya 2023 builds for windows and linux
+	Adds improved drag and drop installer which now supports updating previous versions
+	Adds source code to the release
 
-Initial release
+
+Version 1.0.0
+	Initial release
 
 ```

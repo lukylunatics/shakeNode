@@ -1,15 +1,21 @@
+# Built-in imports
+import logging
+
+# Third-Party imports
 from maya import cmds
 
 
 
-pluginName = "shakeNode"
+moduleName = "shakeNode"
+logger = logging.getLogger(f"{moduleName} Startup")
 
 
 
-cmds.loadPlugin(pluginName)
-print(
-	"// Successfully imported plugin module '{}' v.{} //".format(
-	cmds.pluginInfo(pluginName, query=True, name=True),
-	cmds.pluginInfo(pluginName, query=True, version=True))
+cmds.loadPlugin(moduleName)
+
+logger.info(
+	"Successfully imported plugin module '{}' v.{}".format(
+	cmds.pluginInfo(moduleName, query=True, name=True),
+	cmds.pluginInfo(moduleName, query=True, version=True))
 )
 
